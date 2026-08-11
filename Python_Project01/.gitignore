@@ -1,0 +1,9 @@
+.venv/
+.idea/
+__pycache__/
+*.pyc
+第1章/
+第2章/
+第3章/
+复习/mymod.py
+复习/模块*.py
