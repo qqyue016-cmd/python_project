@@ -1,0 +1,1 @@
+md5_text = './md5_path'
