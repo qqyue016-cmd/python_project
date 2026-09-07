@@ -17,7 +17,7 @@ def check_md5(md5_str: str):
     '''
     # 返回False代表未处理，返回Ture代表已处理
     if not os.path.exists(config.md5_text):
-        # if进入代表传入的md5未被处理过
+        # 进入if代表传入的md5未被处理过
         open(config.md5_text,'w',encoding='utf-8').close()
         return False
     else:
@@ -53,7 +53,7 @@ def get_string_md5(input_string: str,encoding='utf-8'):
 
     return md5_hex
 
-class KnowlegdeBaseService(object):
+class KnowledgeBaseService(object):
     def __init__(self):
         # 创建数据库
         os.makedirs('./chroma.db',exist_ok=True)
