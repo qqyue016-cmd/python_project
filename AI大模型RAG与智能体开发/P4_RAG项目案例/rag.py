@@ -21,7 +21,7 @@ class RagService(object):
                 ('human','{input}')
             ]
         )
-        self.chat_model = ChatTongyi(model=config.chat_model)
+        self.chat_model = ChatTongyi(model=config.chat_model, streaming=True)
         self.chain = self.__get_chain()
 
     def __get_chain(self):

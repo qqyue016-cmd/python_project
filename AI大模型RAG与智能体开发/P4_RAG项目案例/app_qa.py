@@ -21,7 +21,13 @@ if prompt:
     st.chat_message('user').write(prompt)
     st.session_state['message'].append({'role': 'user', 'content': prompt})
 
+    ai_res_list = []
     with st.spinner('Ai思考中'):
-        response = st.session_state['rag'].chain.invoke({'input': prompt},config.session_config)
-        st.chat_message('assistant').write(response)
-        st.session_state['message'].append({'role': 'assistant', 'content': response})
+        response_stream = st.session_state['rag'].chain.stream({'input': prompt},config.session_config)
+        def capture(generator,cache_list):
+            for chunk in generator:
+                cache_list.append(chunk)
+                yield chunk
+
+        st.chat_message('assistant').write_stream(capture(response_stream,ai_res_list))
+        st.session_state['message'].append({'role': 'assistant', 'content': ''.join(ai_res_list)})
