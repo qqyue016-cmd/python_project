@@ -16,3 +16,13 @@ search_kwargs = 2
 # model
 embedding_model = 'text-embedding-v4'
 chat_model  = 'qwen3-max'
+
+# history
+session_id = 'user_001'
+storage_path = './chat_history'
+
+session_config = {
+    "configurable": {
+        'session_id': 'user_001'
+    }
+}
