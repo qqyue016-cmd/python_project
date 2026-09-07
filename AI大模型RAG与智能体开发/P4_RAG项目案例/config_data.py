@@ -12,3 +12,7 @@ max_split_char_number = 1000
 
 # search kwargs
 search_kwargs = 2
+
+# model
+embedding_model = 'text-embedding-v4'
+chat_model  = 'qwen3-max'
