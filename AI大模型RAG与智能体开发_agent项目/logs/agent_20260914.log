@@ -1,0 +1,1127 @@
+2026-09-14 16:40:26,044 - INFO - logger_handler.py - 53 - This is an info message
+2026-09-14 19:08:58,271 - INFO - logger_handler.py - 53 - This is an info message
+2026-09-14 20:46:39,508 - ERROR - prompt_loader.py - 15 - [load_system_prompt]解析系统提示词错误，[Errno 2] No such file or directory: 'D:\\develop\\PythonProject\\AI大模型RAG与智能体开发_agent项目\\prompts/main_prompt.txt'
+2026-09-14 20:47:21,143 - ERROR - prompt_loader.py - 9 - [load_system_prompt]配置项中没有main_prompt.txt配置项
+2026-09-14 20:47:24,867 - ERROR - prompt_loader.py - 9 - [load_system_prompt]配置项中没有main_prompt.txt配置项
+2026-09-14 20:50:38,384 - ERROR - prompt_loader.py - 9 - [load_system_prompt]配置项中没有main_prompt.txt配置项
+2026-09-14 20:52:18,202 - ERROR - prompt_loader.py - 9 - [load_system_prompt]配置项中没有main_prompt.txt配置项
+2026-09-14 20:53:58,333 - ERROR - prompt_loader.py - 16 - [load_system_prompt]解析系统提示词错误，[Errno 2] No such file or directory: 'D:\\develop\\PythonProject\\AI大模型RAG与智能体开发_agent项目\\prompts/main_prompt.txt'
+2026-09-14 22:43:02,314 - ERROR - file_handler.py - 36 - [listdir_with_allowed_type]data不是文件夹
+2026-09-14 22:43:02,314 - ERROR - file_handler.py - 14 - [md5计算]文件txt不存在
+2026-09-14 22:43:02,315 - ERROR - vector_store.py - 88 - [加载向量库]txt文件加载向量库失败：Error loading txt
+Traceback (most recent call last):
+  File "D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\.venv\Lib\site-packages\langchain_community\document_loaders\text.py", line 42, in lazy_load
+    with open(self.file_path, encoding=self.encoding) as f:
+         ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'txt'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\rag\vector_store.py", line 71, in load_document
+    documents: list[Document] = get_file_document(path)
+                                ~~~~~~~~~~~~~~~~~^^^^^^
+  File "D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\rag\vector_store.py", line 52, in get_file_document
+    return text_loader(read_path)
+  File "D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\utils\file_handler.py", line 49, in text_loader
+    return TextLoader(filepath).load() # 返回文档列表
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\.venv\Lib\site-packages\langchain_core\document_loaders\base.py", line 43, in load
+    return list(self.lazy_load())
+  File "D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\.venv\Lib\site-packages\langchain_community\document_loaders\text.py", line 58, in lazy_load
+    raise RuntimeError(f"Error loading {self.file_path}") from e
+RuntimeError: Error loading txt
+2026-09-14 22:43:02,318 - ERROR - file_handler.py - 14 - [md5计算]文件pdf不存在
+2026-09-14 22:43:02,319 - ERROR - vector_store.py - 88 - [加载向量库]pdf文件加载向量库失败：File path pdf is not a valid file or url
+Traceback (most recent call last):
+  File "D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\rag\vector_store.py", line 71, in load_document
+    documents: list[Document] = get_file_document(path)
+                                ~~~~~~~~~~~~~~~~~^^^^^^
+  File "D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\rag\vector_store.py", line 55, in get_file_document
+    return pdf_loader(read_path)
+  File "D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\utils\file_handler.py", line 46, in pdf_loader
+    return PyPDFLoader(filepath).load() # 返回文档列表
+           ~~~~~~~~~~~^^^^^^^^^^
+  File "D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\.venv\Lib\site-packages\langchain_community\document_loaders\pdf.py", line 281, in __init__
+    super().__init__(file_path, headers=headers)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\.venv\Lib\site-packages\langchain_community\document_loaders\pdf.py", line 140, in __init__
+    raise ValueError("File path %s is not a valid file or url" % self.file_path)
+ValueError: File path pdf is not a valid file or url
+2026-09-14 22:43:59,790 - ERROR - file_handler.py - 36 - [listdir_with_allowed_type]data不是文件夹
+2026-09-14 22:43:59,790 - ERROR - file_handler.py - 14 - [md5计算]文件txt不存在
+2026-09-14 22:43:59,791 - ERROR - vector_store.py - 88 - [加载向量库]txt文件加载向量库失败：Error loading txt
+Traceback (most recent call last):
+  File "D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\.venv\Lib\site-packages\langchain_community\document_loaders\text.py", line 42, in lazy_load
+    with open(self.file_path, encoding=self.encoding) as f:
+         ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'txt'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\rag\vector_store.py", line 71, in load_document
+    documents: list[Document] = get_file_document(path)
+                                ~~~~~~~~~~~~~~~~~^^^^^^
+  File "D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\rag\vector_store.py", line 52, in get_file_document
+    return text_loader(read_path)
+  File "D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\utils\file_handler.py", line 49, in text_loader
+    return TextLoader(filepath).load() # 返回文档列表
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\.venv\Lib\site-packages\langchain_core\document_loaders\base.py", line 43, in load
+    return list(self.lazy_load())
+  File "D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\.venv\Lib\site-packages\langchain_community\document_loaders\text.py", line 58, in lazy_load
+    raise RuntimeError(f"Error loading {self.file_path}") from e
+RuntimeError: Error loading txt
+2026-09-14 22:43:59,793 - ERROR - file_handler.py - 14 - [md5计算]文件pdf不存在
+2026-09-14 22:43:59,794 - ERROR - vector_store.py - 88 - [加载向量库]pdf文件加载向量库失败：File path pdf is not a valid file or url
+Traceback (most recent call last):
+  File "D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\rag\vector_store.py", line 71, in load_document
+    documents: list[Document] = get_file_document(path)
+                                ~~~~~~~~~~~~~~~~~^^^^^^
+  File "D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\rag\vector_store.py", line 55, in get_file_document
+    return pdf_loader(read_path)
+  File "D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\utils\file_handler.py", line 46, in pdf_loader
+    return PyPDFLoader(filepath).load() # 返回文档列表
+           ~~~~~~~~~~~^^^^^^^^^^
+  File "D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\.venv\Lib\site-packages\langchain_community\document_loaders\pdf.py", line 281, in __init__
+    super().__init__(file_path, headers=headers)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\.venv\Lib\site-packages\langchain_community\document_loaders\pdf.py", line 140, in __init__
+    raise ValueError("File path %s is not a valid file or url" % self.file_path)
+ValueError: File path pdf is not a valid file or url
+2026-09-14 22:44:20,741 - ERROR - vector_store.py - 88 - [加载向量库]data\选购指南.txt文件加载向量库失败：'ChatTongyi' object has no attribute 'embed_documents'
+Traceback (most recent call last):
+  File "D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\rag\vector_store.py", line 83, in load_document
+    self.chroma.add_documents(split_documents)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\.venv\Lib\site-packages\langchain_core\vectorstores\base.py", line 258, in add_documents
+    return self.add_texts(texts, metadatas, **kwargs)
+           ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\.venv\Lib\site-packages\langchain_chroma\vectorstores.py", line 627, in add_texts
+    embeddings = self._embedding_function.embed_documents(texts)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\.venv\Lib\site-packages\pydantic\main.py", line 1042, in __getattr__
+    raise AttributeError(f'{type(self).__name__!r} object has no attribute {item!r}')
+AttributeError: 'ChatTongyi' object has no attribute 'embed_documents'
+2026-09-14 22:45:16,774 - ERROR - file_handler.py - 36 - [listdir_with_allowed_type]data不是文件夹
+2026-09-14 22:45:16,774 - ERROR - file_handler.py - 14 - [md5计算]文件txt不存在
+2026-09-14 22:45:16,775 - ERROR - vector_store.py - 88 - [加载向量库]txt文件加载向量库失败：Error loading txt
+Traceback (most recent call last):
+  File "D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\.venv\Lib\site-packages\langchain_community\document_loaders\text.py", line 42, in lazy_load
+    with open(self.file_path, encoding=self.encoding) as f:
+         ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'txt'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\rag\vector_store.py", line 71, in load_document
+    documents: list[Document] = get_file_document(path)
+                                ~~~~~~~~~~~~~~~~~^^^^^^
+  File "D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\rag\vector_store.py", line 52, in get_file_document
+    return text_loader(read_path)
+  File "D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\utils\file_handler.py", line 49, in text_loader
+    return TextLoader(filepath).load() # 返回文档列表
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\.venv\Lib\site-packages\langchain_core\document_loaders\base.py", line 43, in load
+    return list(self.lazy_load())
+  File "D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\.venv\Lib\site-packages\langchain_community\document_loaders\text.py", line 58, in lazy_load
+    raise RuntimeError(f"Error loading {self.file_path}") from e
+RuntimeError: Error loading txt
+2026-09-14 22:45:16,777 - ERROR - file_handler.py - 14 - [md5计算]文件pdf不存在
+2026-09-14 22:45:16,778 - ERROR - vector_store.py - 88 - [加载向量库]pdf文件加载向量库失败：File path pdf is not a valid file or url
+Traceback (most recent call last):
+  File "D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\rag\vector_store.py", line 71, in load_document
+    documents: list[Document] = get_file_document(path)
+                                ~~~~~~~~~~~~~~~~~^^^^^^
+  File "D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\rag\vector_store.py", line 55, in get_file_document
+    return pdf_loader(read_path)
+  File "D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\utils\file_handler.py", line 46, in pdf_loader
+    return PyPDFLoader(filepath).load() # 返回文档列表
+           ~~~~~~~~~~~^^^^^^^^^^
+  File "D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\.venv\Lib\site-packages\langchain_community\document_loaders\pdf.py", line 281, in __init__
+    super().__init__(file_path, headers=headers)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\.venv\Lib\site-packages\langchain_community\document_loaders\pdf.py", line 140, in __init__
+    raise ValueError("File path %s is not a valid file or url" % self.file_path)
+ValueError: File path pdf is not a valid file or url
+2026-09-14 22:48:50,485 - ERROR - file_handler.py - 36 - [listdir_with_allowed_type]data不是文件夹
+2026-09-14 22:48:50,485 - ERROR - file_handler.py - 14 - [md5计算]文件txt不存在
+2026-09-14 22:48:50,486 - ERROR - vector_store.py - 88 - [加载向量库]txt文件加载向量库失败：Error loading txt
+Traceback (most recent call last):
+  File "D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\.venv\Lib\site-packages\langchain_community\document_loaders\text.py", line 42, in lazy_load
+    with open(self.file_path, encoding=self.encoding) as f:
+         ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'txt'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\rag\vector_store.py", line 71, in load_document
+    documents: list[Document] = get_file_document(path)
+                                ~~~~~~~~~~~~~~~~~^^^^^^
+  File "D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\rag\vector_store.py", line 52, in get_file_document
+    return text_loader(read_path)
+  File "D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\utils\file_handler.py", line 49, in text_loader
+    return TextLoader(filepath).load() # 返回文档列表
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\.venv\Lib\site-packages\langchain_core\document_loaders\base.py", line 43, in load
+    return list(self.lazy_load())
+  File "D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\.venv\Lib\site-packages\langchain_community\document_loaders\text.py", line 58, in lazy_load
+    raise RuntimeError(f"Error loading {self.file_path}") from e
+RuntimeError: Error loading txt
+2026-09-14 22:48:50,488 - ERROR - file_handler.py - 14 - [md5计算]文件pdf不存在
+2026-09-14 22:48:50,489 - ERROR - vector_store.py - 88 - [加载向量库]pdf文件加载向量库失败：File path pdf is not a valid file or url
+Traceback (most recent call last):
+  File "D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\rag\vector_store.py", line 71, in load_document
+    documents: list[Document] = get_file_document(path)
+                                ~~~~~~~~~~~~~~~~~^^^^^^
+  File "D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\rag\vector_store.py", line 55, in get_file_document
+    return pdf_loader(read_path)
+  File "D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\utils\file_handler.py", line 46, in pdf_loader
+    return PyPDFLoader(filepath).load() # 返回文档列表
+           ~~~~~~~~~~~^^^^^^^^^^
+  File "D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\.venv\Lib\site-packages\langchain_community\document_loaders\pdf.py", line 281, in __init__
+    super().__init__(file_path, headers=headers)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\.venv\Lib\site-packages\langchain_community\document_loaders\pdf.py", line 140, in __init__
+    raise ValueError("File path %s is not a valid file or url" % self.file_path)
+ValueError: File path pdf is not a valid file or url
+2026-09-14 22:49:31,319 - ERROR - vector_store.py - 88 - [加载向量库]data\扫地机器人100问.pdf文件加载向量库失败：`pypdf` package not found, please install it with `pip install pypdf`
+Traceback (most recent call last):
+  File "D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\.venv\Lib\site-packages\langchain_community\document_loaders\parsers\pdf.py", line 358, in lazy_parse
+    import pypdf
+ModuleNotFoundError: No module named 'pypdf'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\rag\vector_store.py", line 71, in load_document
+    documents: list[Document] = get_file_document(path)
+                                ~~~~~~~~~~~~~~~~~^^^^^^
+  File "D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\rag\vector_store.py", line 55, in get_file_document
+    return pdf_loader(read_path)
+  File "D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\utils\file_handler.py", line 46, in pdf_loader
+    return PyPDFLoader(filepath).load() # 返回文档列表
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\.venv\Lib\site-packages\langchain_core\document_loaders\base.py", line 43, in load
+    return list(self.lazy_load())
+  File "D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\.venv\Lib\site-packages\langchain_community\document_loaders\pdf.py", line 305, in lazy_load
+    yield from self.parser.lazy_parse(blob)
+  File "D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\.venv\Lib\site-packages\langchain_community\document_loaders\parsers\pdf.py", line 360, in lazy_parse
+    raise ImportError(
+        "`pypdf` package not found, please install it with `pip install pypdf`"
+    )
+ImportError: `pypdf` package not found, please install it with `pip install pypdf`
+2026-09-14 22:49:36,798 - INFO - vector_store.py - 85 - [加载向量库]data\扫地机器人100问2.txt文件加载成功
+2026-09-14 22:49:40,297 - INFO - vector_store.py - 85 - [加载向量库]data\扫拖一体机器人100问.txt文件加载成功
+2026-09-14 22:49:48,924 - INFO - vector_store.py - 85 - [加载向量库]data\故障排除.txt文件加载成功
+2026-09-14 22:49:53,764 - INFO - vector_store.py - 85 - [加载向量库]data\维护保养.txt文件加载成功
+2026-09-14 22:49:58,162 - INFO - vector_store.py - 85 - [加载向量库]data\选购指南.txt文件加载成功
+2026-09-14 22:50:06,102 - ERROR - vector_store.py - 88 - [加载向量库]data\扫地机器人100问.pdf文件加载向量库失败：`pypdf` package not found, please install it with `pip install pypdf`
+Traceback (most recent call last):
+  File "D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\.venv\Lib\site-packages\langchain_community\document_loaders\parsers\pdf.py", line 358, in lazy_parse
+    import pypdf
+ModuleNotFoundError: No module named 'pypdf'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\rag\vector_store.py", line 71, in load_document
+    documents: list[Document] = get_file_document(path)
+                                ~~~~~~~~~~~~~~~~~^^^^^^
+  File "D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\rag\vector_store.py", line 55, in get_file_document
+    return pdf_loader(read_path)
+  File "D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\utils\file_handler.py", line 46, in pdf_loader
+    return PyPDFLoader(filepath).load() # 返回文档列表
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\.venv\Lib\site-packages\langchain_core\document_loaders\base.py", line 43, in load
+    return list(self.lazy_load())
+  File "D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\.venv\Lib\site-packages\langchain_community\document_loaders\pdf.py", line 305, in lazy_load
+    yield from self.parser.lazy_parse(blob)
+  File "D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\.venv\Lib\site-packages\langchain_community\document_loaders\parsers\pdf.py", line 360, in lazy_parse
+    raise ImportError(
+        "`pypdf` package not found, please install it with `pip install pypdf`"
+    )
+ImportError: `pypdf` package not found, please install it with `pip install pypdf`
+2026-09-14 22:50:06,106 - INFO - vector_store.py - 67 - [加载向量库]data\扫地机器人100问2.txt文件已加载过，跳过
+2026-09-14 22:50:06,107 - INFO - vector_store.py - 67 - [加载向量库]data\扫拖一体机器人100问.txt文件已加载过，跳过
+2026-09-14 22:50:06,108 - INFO - vector_store.py - 67 - [加载向量库]data\故障排除.txt文件已加载过，跳过
+2026-09-14 22:50:06,109 - INFO - vector_store.py - 67 - [加载向量库]data\维护保养.txt文件已加载过，跳过
+2026-09-14 22:50:06,110 - INFO - vector_store.py - 67 - [加载向量库]data\选购指南.txt文件已加载过，跳过
+2026-09-14 22:51:11,603 - ERROR - file_handler.py - 36 - [listdir_with_allowed_type]data不是文件夹
+2026-09-14 22:51:21,474 - ERROR - file_handler.py - 36 - [listdir_with_allowed_type]data不是文件夹
+2026-09-14 22:53:03,667 - INFO - vector_store.py - 85 - [加载向量库]D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\data\扫地机器人100问.pdf文件加载成功
+2026-09-14 22:53:03,669 - ERROR - vector_store.py - 88 - [加载向量库]D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\data\扫地机器人100问2.txt文件加载向量库失败：Error loading D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\data\扫地机器人100问2.txt
+Traceback (most recent call last):
+  File "D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\.venv\Lib\site-packages\langchain_community\document_loaders\text.py", line 43, in lazy_load
+    text = f.read()
+UnicodeDecodeError: 'gbk' codec can't decode byte 0xab in position 4: illegal multibyte sequence
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\rag\vector_store.py", line 71, in load_document
+    documents: list[Document] = get_file_document(path)
+                                ~~~~~~~~~~~~~~~~~^^^^^^
+  File "D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\rag\vector_store.py", line 52, in get_file_document
+    return text_loader(read_path)
+  File "D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\utils\file_handler.py", line 49, in text_loader
+    return TextLoader(filepath).load() # 返回文档列表
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\.venv\Lib\site-packages\langchain_core\document_loaders\base.py", line 43, in load
+    return list(self.lazy_load())
+  File "D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\.venv\Lib\site-packages\langchain_community\document_loaders\text.py", line 56, in lazy_load
+    raise RuntimeError(f"Error loading {self.file_path}") from e
+RuntimeError: Error loading D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\data\扫地机器人100问2.txt
+2026-09-14 22:53:03,673 - ERROR - vector_store.py - 88 - [加载向量库]D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\data\扫拖一体机器人100问.txt文件加载向量库失败：Error loading D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\data\扫拖一体机器人100问.txt
+Traceback (most recent call last):
+  File "D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\.venv\Lib\site-packages\langchain_community\document_loaders\text.py", line 43, in lazy_load
+    text = f.read()
+UnicodeDecodeError: 'gbk' codec can't decode byte 0xab in position 4: illegal multibyte sequence
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\rag\vector_store.py", line 71, in load_document
+    documents: list[Document] = get_file_document(path)
+                                ~~~~~~~~~~~~~~~~~^^^^^^
+  File "D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\rag\vector_store.py", line 52, in get_file_document
+    return text_loader(read_path)
+  File "D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\utils\file_handler.py", line 49, in text_loader
+    return TextLoader(filepath).load() # 返回文档列表
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\.venv\Lib\site-packages\langchain_core\document_loaders\base.py", line 43, in load
+    return list(self.lazy_load())
+  File "D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\.venv\Lib\site-packages\langchain_community\document_loaders\text.py", line 56, in lazy_load
+    raise RuntimeError(f"Error loading {self.file_path}") from e
+RuntimeError: Error loading D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\data\扫拖一体机器人100问.txt
+2026-09-14 22:53:03,675 - ERROR - vector_store.py - 88 - [加载向量库]D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\data\故障排除.txt文件加载向量库失败：Error loading D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\data\故障排除.txt
+Traceback (most recent call last):
+  File "D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\.venv\Lib\site-packages\langchain_community\document_loaders\text.py", line 43, in lazy_load
+    text = f.read()
+UnicodeDecodeError: 'gbk' codec can't decode byte 0xab in position 2: illegal multibyte sequence
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\rag\vector_store.py", line 71, in load_document
+    documents: list[Document] = get_file_document(path)
+                                ~~~~~~~~~~~~~~~~~^^^^^^
+  File "D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\rag\vector_store.py", line 52, in get_file_document
+    return text_loader(read_path)
+  File "D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\utils\file_handler.py", line 49, in text_loader
+    return TextLoader(filepath).load() # 返回文档列表
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\.venv\Lib\site-packages\langchain_core\document_loaders\base.py", line 43, in load
+    return list(self.lazy_load())
+  File "D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\.venv\Lib\site-packages\langchain_community\document_loaders\text.py", line 56, in lazy_load
+    raise RuntimeError(f"Error loading {self.file_path}") from e
+RuntimeError: Error loading D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\data\故障排除.txt
+2026-09-14 22:53:03,677 - ERROR - vector_store.py - 88 - [加载向量库]D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\data\维护保养.txt文件加载向量库失败：Error loading D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\data\维护保养.txt
+Traceback (most recent call last):
+  File "D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\.venv\Lib\site-packages\langchain_community\document_loaders\text.py", line 43, in lazy_load
+    text = f.read()
+UnicodeDecodeError: 'gbk' codec can't decode byte 0xab in position 4: illegal multibyte sequence
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\rag\vector_store.py", line 71, in load_document
+    documents: list[Document] = get_file_document(path)
+                                ~~~~~~~~~~~~~~~~~^^^^^^
+  File "D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\rag\vector_store.py", line 52, in get_file_document
+    return text_loader(read_path)
+  File "D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\utils\file_handler.py", line 49, in text_loader
+    return TextLoader(filepath).load() # 返回文档列表
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\.venv\Lib\site-packages\langchain_core\document_loaders\base.py", line 43, in load
+    return list(self.lazy_load())
+  File "D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\.venv\Lib\site-packages\langchain_community\document_loaders\text.py", line 56, in lazy_load
+    raise RuntimeError(f"Error loading {self.file_path}") from e
+RuntimeError: Error loading D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\data\维护保养.txt
+2026-09-14 22:53:03,680 - ERROR - vector_store.py - 88 - [加载向量库]D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\data\选购指南.txt文件加载向量库失败：Error loading D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\data\选购指南.txt
+Traceback (most recent call last):
+  File "D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\.venv\Lib\site-packages\langchain_community\document_loaders\text.py", line 43, in lazy_load
+    text = f.read()
+UnicodeDecodeError: 'gbk' codec can't decode byte 0xab in position 2: illegal multibyte sequence
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\rag\vector_store.py", line 71, in load_document
+    documents: list[Document] = get_file_document(path)
+                                ~~~~~~~~~~~~~~~~~^^^^^^
+  File "D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\rag\vector_store.py", line 52, in get_file_document
+    return text_loader(read_path)
+  File "D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\utils\file_handler.py", line 49, in text_loader
+    return TextLoader(filepath).load() # 返回文档列表
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\.venv\Lib\site-packages\langchain_core\document_loaders\base.py", line 43, in load
+    return list(self.lazy_load())
+  File "D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\.venv\Lib\site-packages\langchain_community\document_loaders\text.py", line 56, in lazy_load
+    raise RuntimeError(f"Error loading {self.file_path}") from e
+RuntimeError: Error loading D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\data\选购指南.txt
+2026-09-14 22:53:59,005 - INFO - vector_store.py - 85 - [加载向量库]D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\data\扫地机器人100问.pdf文件加载成功
+2026-09-14 22:54:02,654 - INFO - vector_store.py - 85 - [加载向量库]D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\data\扫地机器人100问2.txt文件加载成功
+2026-09-14 22:54:06,123 - INFO - vector_store.py - 85 - [加载向量库]D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\data\扫拖一体机器人100问.txt文件加载成功
+2026-09-14 22:54:12,669 - INFO - vector_store.py - 85 - [加载向量库]D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\data\故障排除.txt文件加载成功
+2026-09-14 22:54:16,596 - INFO - vector_store.py - 85 - [加载向量库]D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\data\维护保养.txt文件加载成功
+2026-09-14 22:54:20,923 - INFO - vector_store.py - 85 - [加载向量库]D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\data\选购指南.txt文件加载成功
+2026-09-14 22:57:04,810 - ERROR - vector_store.py - 88 - [加载向量库]D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\data\扫地机器人100问.pdf文件加载向量库失败：PyPDFLoader.__init__() got an unexpected keyword argument 'encoding'
+Traceback (most recent call last):
+  File "D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\rag\vector_store.py", line 71, in load_document
+    documents: list[Document] = get_file_document(path)
+                                ~~~~~~~~~~~~~~~~~^^^^^^
+  File "D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\rag\vector_store.py", line 55, in get_file_document
+    return pdf_loader(read_path)
+  File "D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\utils\file_handler.py", line 46, in pdf_loader
+    return PyPDFLoader(filepath,encoding='utf-8').load() # 返回文档列表
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: PyPDFLoader.__init__() got an unexpected keyword argument 'encoding'
+2026-09-14 22:57:08,983 - INFO - vector_store.py - 85 - [加载向量库]D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\data\扫地机器人100问2.txt文件加载成功
+2026-09-14 22:57:11,604 - INFO - vector_store.py - 85 - [加载向量库]D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\data\扫拖一体机器人100问.txt文件加载成功
+2026-09-14 22:57:16,829 - INFO - vector_store.py - 85 - [加载向量库]D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\data\故障排除.txt文件加载成功
+2026-09-14 22:57:21,125 - INFO - vector_store.py - 85 - [加载向量库]D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\data\维护保养.txt文件加载成功
+2026-09-14 22:57:26,159 - INFO - vector_store.py - 85 - [加载向量库]D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\data\选购指南.txt文件加载成功
+2026-09-14 23:00:03,087 - ERROR - vector_store.py - 88 - [加载向量库]D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\data\扫地机器人100问.pdf文件加载向量库失败：PyPDFLoader.__init__() got an unexpected keyword argument 'encoding'
+Traceback (most recent call last):
+  File "D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\rag\vector_store.py", line 71, in load_document
+    documents: list[Document] = get_file_document(path)
+                                ~~~~~~~~~~~~~~~~~^^^^^^
+  File "D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\rag\vector_store.py", line 55, in get_file_document
+    return pdf_loader(read_path)
+  File "D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\utils\file_handler.py", line 46, in pdf_loader
+    return PyPDFLoader(filepath,encoding='utf-8').load() # 返回文档列表
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: PyPDFLoader.__init__() got an unexpected keyword argument 'encoding'
+2026-09-14 23:00:08,534 - INFO - vector_store.py - 85 - [加载向量库]D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\data\扫地机器人100问2.txt文件加载成功
+2026-09-14 23:00:11,836 - INFO - vector_store.py - 85 - [加载向量库]D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\data\扫拖一体机器人100问.txt文件加载成功
+2026-09-14 23:00:18,772 - INFO - vector_store.py - 85 - [加载向量库]D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\data\故障排除.txt文件加载成功
+2026-09-14 23:00:22,939 - INFO - vector_store.py - 85 - [加载向量库]D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\data\维护保养.txt文件加载成功
+2026-09-14 23:00:31,823 - ERROR - vector_store.py - 88 - [加载向量库]D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\data\扫地机器人100问.pdf文件加载向量库失败：PyPDFLoader.__init__() got an unexpected keyword argument 'encoding'
+Traceback (most recent call last):
+  File "D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\rag\vector_store.py", line 71, in load_document
+    documents: list[Document] = get_file_document(path)
+                                ~~~~~~~~~~~~~~~~~^^^^^^
+  File "D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\rag\vector_store.py", line 55, in get_file_document
+    return pdf_loader(read_path)
+  File "D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\utils\file_handler.py", line 46, in pdf_loader
+    return PyPDFLoader(filepath,encoding='utf-8').load() # 返回文档列表
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: PyPDFLoader.__init__() got an unexpected keyword argument 'encoding'
+2026-09-14 23:00:36,431 - INFO - vector_store.py - 85 - [加载向量库]D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\data\扫地机器人100问2.txt文件加载成功
+2026-09-14 23:00:37,283 - INFO - vector_store.py - 85 - [加载向量库]D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\data\选购指南.txt文件加载成功
+2026-09-14 23:00:40,361 - INFO - vector_store.py - 85 - [加载向量库]D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\data\扫拖一体机器人100问.txt文件加载成功
+2026-09-14 23:00:50,080 - INFO - vector_store.py - 85 - [加载向量库]D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\data\故障排除.txt文件加载成功
+2026-09-14 23:00:55,677 - INFO - vector_store.py - 85 - [加载向量库]D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\data\维护保养.txt文件加载成功
+2026-09-14 23:00:55,688 - INFO - vector_store.py - 67 - [加载向量库]D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\data\选购指南.txt文件已加载过，跳过
+2026-09-14 23:01:56,222 - ERROR - vector_store.py - 88 - [加载向量库]D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\data\扫地机器人100问.pdf文件加载向量库失败：Error in compaction: Error constructing hnsw segment reader: Error creating hnsw segment reader: Error loading hnsw index
+Traceback (most recent call last):
+  File "D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\rag\vector_store.py", line 83, in load_document
+    self.chroma.add_documents(split_documents)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\.venv\Lib\site-packages\langchain_core\vectorstores\base.py", line 258, in add_documents
+    return self.add_texts(texts, metadatas, **kwargs)
+           ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\.venv\Lib\site-packages\langchain_chroma\vectorstores.py", line 651, in add_texts
+    self._collection.upsert(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        metadatas=metadatas,  # type: ignore[arg-type]
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+        ids=ids_with_metadata,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\.venv\Lib\site-packages\chromadb\api\models\Collection.py", line 530, in upsert
+    self._client._upsert(
+    ~~~~~~~~~~~~~~~~~~~~^
+        collection_id=self.id,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+        database=self.database,
+        ^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\.venv\Lib\site-packages\chromadb\api\rust.py", line 541, in _upsert
+    return self.bindings.upsert(
+           ~~~~~~~~~~~~~~~~~~~~^
+        str(collection_id),
+        ^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+        database,
+        ^^^^^^^^^
+    )
+    ^
+chromadb.errors.InternalError: Error in compaction: Error constructing hnsw segment reader: Error creating hnsw segment reader: Error loading hnsw index
+2026-09-14 23:01:59,170 - ERROR - vector_store.py - 88 - [加载向量库]D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\data\扫地机器人100问2.txt文件加载向量库失败：Error in compaction: Error constructing hnsw segment reader: Error creating hnsw segment reader: Error loading hnsw index
+Traceback (most recent call last):
+  File "D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\rag\vector_store.py", line 83, in load_document
+    self.chroma.add_documents(split_documents)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\.venv\Lib\site-packages\langchain_core\vectorstores\base.py", line 258, in add_documents
+    return self.add_texts(texts, metadatas, **kwargs)
+           ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\.venv\Lib\site-packages\langchain_chroma\vectorstores.py", line 651, in add_texts
+    self._collection.upsert(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        metadatas=metadatas,  # type: ignore[arg-type]
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+        ids=ids_with_metadata,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\.venv\Lib\site-packages\chromadb\api\models\Collection.py", line 530, in upsert
+    self._client._upsert(
+    ~~~~~~~~~~~~~~~~~~~~^
+        collection_id=self.id,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+        database=self.database,
+        ^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\.venv\Lib\site-packages\chromadb\api\rust.py", line 541, in _upsert
+    return self.bindings.upsert(
+           ~~~~~~~~~~~~~~~~~~~~^
+        str(collection_id),
+        ^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+        database,
+        ^^^^^^^^^
+    )
+    ^
+chromadb.errors.InternalError: Error in compaction: Error constructing hnsw segment reader: Error creating hnsw segment reader: Error loading hnsw index
+2026-09-14 23:02:02,976 - ERROR - vector_store.py - 88 - [加载向量库]D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\data\扫拖一体机器人100问.txt文件加载向量库失败：Error in compaction: Error constructing hnsw segment reader: Error creating hnsw segment reader: Error loading hnsw index
+Traceback (most recent call last):
+  File "D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\rag\vector_store.py", line 83, in load_document
+    self.chroma.add_documents(split_documents)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\.venv\Lib\site-packages\langchain_core\vectorstores\base.py", line 258, in add_documents
+    return self.add_texts(texts, metadatas, **kwargs)
+           ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\.venv\Lib\site-packages\langchain_chroma\vectorstores.py", line 651, in add_texts
+    self._collection.upsert(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        metadatas=metadatas,  # type: ignore[arg-type]
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+        ids=ids_with_metadata,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\.venv\Lib\site-packages\chromadb\api\models\Collection.py", line 530, in upsert
+    self._client._upsert(
+    ~~~~~~~~~~~~~~~~~~~~^
+        collection_id=self.id,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+        database=self.database,
+        ^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\.venv\Lib\site-packages\chromadb\api\rust.py", line 541, in _upsert
+    return self.bindings.upsert(
+           ~~~~~~~~~~~~~~~~~~~~^
+        str(collection_id),
+        ^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+        database,
+        ^^^^^^^^^
+    )
+    ^
+chromadb.errors.InternalError: Error in compaction: Error constructing hnsw segment reader: Error creating hnsw segment reader: Error loading hnsw index
+2026-09-14 23:02:10,483 - ERROR - vector_store.py - 88 - [加载向量库]D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\data\故障排除.txt文件加载向量库失败：Error in compaction: Error constructing hnsw segment reader: Error creating hnsw segment reader: Error loading hnsw index
+Traceback (most recent call last):
+  File "D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\rag\vector_store.py", line 83, in load_document
+    self.chroma.add_documents(split_documents)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\.venv\Lib\site-packages\langchain_core\vectorstores\base.py", line 258, in add_documents
+    return self.add_texts(texts, metadatas, **kwargs)
+           ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\.venv\Lib\site-packages\langchain_chroma\vectorstores.py", line 651, in add_texts
+    self._collection.upsert(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        metadatas=metadatas,  # type: ignore[arg-type]
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+        ids=ids_with_metadata,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\.venv\Lib\site-packages\chromadb\api\models\Collection.py", line 530, in upsert
+    self._client._upsert(
+    ~~~~~~~~~~~~~~~~~~~~^
+        collection_id=self.id,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+        database=self.database,
+        ^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\.venv\Lib\site-packages\chromadb\api\rust.py", line 541, in _upsert
+    return self.bindings.upsert(
+           ~~~~~~~~~~~~~~~~~~~~^
+        str(collection_id),
+        ^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+        database,
+        ^^^^^^^^^
+    )
+    ^
+chromadb.errors.InternalError: Error in compaction: Error constructing hnsw segment reader: Error creating hnsw segment reader: Error loading hnsw index
+2026-09-14 23:02:15,106 - ERROR - vector_store.py - 88 - [加载向量库]D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\data\维护保养.txt文件加载向量库失败：Error in compaction: Error constructing hnsw segment reader: Error creating hnsw segment reader: Error loading hnsw index
+Traceback (most recent call last):
+  File "D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\rag\vector_store.py", line 83, in load_document
+    self.chroma.add_documents(split_documents)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\.venv\Lib\site-packages\langchain_core\vectorstores\base.py", line 258, in add_documents
+    return self.add_texts(texts, metadatas, **kwargs)
+           ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\.venv\Lib\site-packages\langchain_chroma\vectorstores.py", line 651, in add_texts
+    self._collection.upsert(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        metadatas=metadatas,  # type: ignore[arg-type]
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+        ids=ids_with_metadata,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\.venv\Lib\site-packages\chromadb\api\models\Collection.py", line 530, in upsert
+    self._client._upsert(
+    ~~~~~~~~~~~~~~~~~~~~^
+        collection_id=self.id,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+        database=self.database,
+        ^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\.venv\Lib\site-packages\chromadb\api\rust.py", line 541, in _upsert
+    return self.bindings.upsert(
+           ~~~~~~~~~~~~~~~~~~~~^
+        str(collection_id),
+        ^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+        database,
+        ^^^^^^^^^
+    )
+    ^
+chromadb.errors.InternalError: Error in compaction: Error constructing hnsw segment reader: Error creating hnsw segment reader: Error loading hnsw index
+2026-09-14 23:02:19,898 - ERROR - vector_store.py - 88 - [加载向量库]D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\data\选购指南.txt文件加载向量库失败：Error in compaction: Error constructing hnsw segment reader: Error creating hnsw segment reader: Error loading hnsw index
+Traceback (most recent call last):
+  File "D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\rag\vector_store.py", line 83, in load_document
+    self.chroma.add_documents(split_documents)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\.venv\Lib\site-packages\langchain_core\vectorstores\base.py", line 258, in add_documents
+    return self.add_texts(texts, metadatas, **kwargs)
+           ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\.venv\Lib\site-packages\langchain_chroma\vectorstores.py", line 651, in add_texts
+    self._collection.upsert(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        metadatas=metadatas,  # type: ignore[arg-type]
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+        ids=ids_with_metadata,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\.venv\Lib\site-packages\chromadb\api\models\Collection.py", line 530, in upsert
+    self._client._upsert(
+    ~~~~~~~~~~~~~~~~~~~~^
+        collection_id=self.id,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+        database=self.database,
+        ^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\.venv\Lib\site-packages\chromadb\api\rust.py", line 541, in _upsert
+    return self.bindings.upsert(
+           ~~~~~~~~~~~~~~~~~~~~^
+        str(collection_id),
+        ^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+        database,
+        ^^^^^^^^^
+    )
+    ^
+chromadb.errors.InternalError: Error in compaction: Error constructing hnsw segment reader: Error creating hnsw segment reader: Error loading hnsw index
+2026-09-14 23:02:54,054 - ERROR - vector_store.py - 88 - [加载向量库]D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\data\扫地机器人100问.pdf文件加载向量库失败：Error in compaction: Error constructing hnsw segment reader: Error creating hnsw segment reader: Error loading hnsw index
+Traceback (most recent call last):
+  File "D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\rag\vector_store.py", line 83, in load_document
+    self.chroma.add_documents(split_documents)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\.venv\Lib\site-packages\langchain_core\vectorstores\base.py", line 258, in add_documents
+    return self.add_texts(texts, metadatas, **kwargs)
+           ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\.venv\Lib\site-packages\langchain_chroma\vectorstores.py", line 651, in add_texts
+    self._collection.upsert(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        metadatas=metadatas,  # type: ignore[arg-type]
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+        ids=ids_with_metadata,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\.venv\Lib\site-packages\chromadb\api\models\Collection.py", line 530, in upsert
+    self._client._upsert(
+    ~~~~~~~~~~~~~~~~~~~~^
+        collection_id=self.id,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+        database=self.database,
+        ^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\.venv\Lib\site-packages\chromadb\api\rust.py", line 541, in _upsert
+    return self.bindings.upsert(
+           ~~~~~~~~~~~~~~~~~~~~^
+        str(collection_id),
+        ^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+        database,
+        ^^^^^^^^^
+    )
+    ^
+chromadb.errors.InternalError: Error in compaction: Error constructing hnsw segment reader: Error creating hnsw segment reader: Error loading hnsw index
+2026-09-14 23:02:56,644 - ERROR - vector_store.py - 88 - [加载向量库]D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\data\扫地机器人100问2.txt文件加载向量库失败：Error in compaction: Error constructing hnsw segment reader: Error creating hnsw segment reader: Error loading hnsw index
+Traceback (most recent call last):
+  File "D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\rag\vector_store.py", line 83, in load_document
+    self.chroma.add_documents(split_documents)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\.venv\Lib\site-packages\langchain_core\vectorstores\base.py", line 258, in add_documents
+    return self.add_texts(texts, metadatas, **kwargs)
+           ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\.venv\Lib\site-packages\langchain_chroma\vectorstores.py", line 651, in add_texts
+    self._collection.upsert(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        metadatas=metadatas,  # type: ignore[arg-type]
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+        ids=ids_with_metadata,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\.venv\Lib\site-packages\chromadb\api\models\Collection.py", line 530, in upsert
+    self._client._upsert(
+    ~~~~~~~~~~~~~~~~~~~~^
+        collection_id=self.id,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+        database=self.database,
+        ^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\.venv\Lib\site-packages\chromadb\api\rust.py", line 541, in _upsert
+    return self.bindings.upsert(
+           ~~~~~~~~~~~~~~~~~~~~^
+        str(collection_id),
+        ^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+        database,
+        ^^^^^^^^^
+    )
+    ^
+chromadb.errors.InternalError: Error in compaction: Error constructing hnsw segment reader: Error creating hnsw segment reader: Error loading hnsw index
+2026-09-14 23:03:00,459 - ERROR - vector_store.py - 88 - [加载向量库]D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\data\扫拖一体机器人100问.txt文件加载向量库失败：Error in compaction: Error constructing hnsw segment reader: Error creating hnsw segment reader: Error loading hnsw index
+Traceback (most recent call last):
+  File "D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\rag\vector_store.py", line 83, in load_document
+    self.chroma.add_documents(split_documents)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\.venv\Lib\site-packages\langchain_core\vectorstores\base.py", line 258, in add_documents
+    return self.add_texts(texts, metadatas, **kwargs)
+           ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\.venv\Lib\site-packages\langchain_chroma\vectorstores.py", line 651, in add_texts
+    self._collection.upsert(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        metadatas=metadatas,  # type: ignore[arg-type]
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+        ids=ids_with_metadata,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\.venv\Lib\site-packages\chromadb\api\models\Collection.py", line 530, in upsert
+    self._client._upsert(
+    ~~~~~~~~~~~~~~~~~~~~^
+        collection_id=self.id,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+        database=self.database,
+        ^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\.venv\Lib\site-packages\chromadb\api\rust.py", line 541, in _upsert
+    return self.bindings.upsert(
+           ~~~~~~~~~~~~~~~~~~~~^
+        str(collection_id),
+        ^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+        database,
+        ^^^^^^^^^
+    )
+    ^
+chromadb.errors.InternalError: Error in compaction: Error constructing hnsw segment reader: Error creating hnsw segment reader: Error loading hnsw index
+2026-09-14 23:03:05,541 - ERROR - vector_store.py - 88 - [加载向量库]D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\data\扫地机器人100问.pdf文件加载向量库失败：Error in compaction: Error constructing hnsw segment reader: Error creating hnsw segment reader: Error loading hnsw index
+Traceback (most recent call last):
+  File "D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\rag\vector_store.py", line 83, in load_document
+    self.chroma.add_documents(split_documents)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\.venv\Lib\site-packages\langchain_core\vectorstores\base.py", line 258, in add_documents
+    return self.add_texts(texts, metadatas, **kwargs)
+           ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\.venv\Lib\site-packages\langchain_chroma\vectorstores.py", line 651, in add_texts
+    self._collection.upsert(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        metadatas=metadatas,  # type: ignore[arg-type]
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+        ids=ids_with_metadata,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\.venv\Lib\site-packages\chromadb\api\models\Collection.py", line 530, in upsert
+    self._client._upsert(
+    ~~~~~~~~~~~~~~~~~~~~^
+        collection_id=self.id,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+        database=self.database,
+        ^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\.venv\Lib\site-packages\chromadb\api\rust.py", line 541, in _upsert
+    return self.bindings.upsert(
+           ~~~~~~~~~~~~~~~~~~~~^
+        str(collection_id),
+        ^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+        database,
+        ^^^^^^^^^
+    )
+    ^
+chromadb.errors.InternalError: Error in compaction: Error constructing hnsw segment reader: Error creating hnsw segment reader: Error loading hnsw index
+2026-09-14 23:03:09,005 - ERROR - vector_store.py - 88 - [加载向量库]D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\data\扫地机器人100问2.txt文件加载向量库失败：Error in compaction: Error constructing hnsw segment reader: Error creating hnsw segment reader: Error loading hnsw index
+Traceback (most recent call last):
+  File "D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\rag\vector_store.py", line 83, in load_document
+    self.chroma.add_documents(split_documents)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\.venv\Lib\site-packages\langchain_core\vectorstores\base.py", line 258, in add_documents
+    return self.add_texts(texts, metadatas, **kwargs)
+           ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\.venv\Lib\site-packages\langchain_chroma\vectorstores.py", line 651, in add_texts
+    self._collection.upsert(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        metadatas=metadatas,  # type: ignore[arg-type]
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+        ids=ids_with_metadata,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\.venv\Lib\site-packages\chromadb\api\models\Collection.py", line 530, in upsert
+    self._client._upsert(
+    ~~~~~~~~~~~~~~~~~~~~^
+        collection_id=self.id,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+        database=self.database,
+        ^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\.venv\Lib\site-packages\chromadb\api\rust.py", line 541, in _upsert
+    return self.bindings.upsert(
+           ~~~~~~~~~~~~~~~~~~~~^
+        str(collection_id),
+        ^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+        database,
+        ^^^^^^^^^
+    )
+    ^
+chromadb.errors.InternalError: Error in compaction: Error constructing hnsw segment reader: Error creating hnsw segment reader: Error loading hnsw index
+2026-09-14 23:03:10,253 - ERROR - vector_store.py - 88 - [加载向量库]D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\data\故障排除.txt文件加载向量库失败：Error in compaction: Error constructing hnsw segment reader: Error creating hnsw segment reader: Error loading hnsw index
+Traceback (most recent call last):
+  File "D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\rag\vector_store.py", line 83, in load_document
+    self.chroma.add_documents(split_documents)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\.venv\Lib\site-packages\langchain_core\vectorstores\base.py", line 258, in add_documents
+    return self.add_texts(texts, metadatas, **kwargs)
+           ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\.venv\Lib\site-packages\langchain_chroma\vectorstores.py", line 651, in add_texts
+    self._collection.upsert(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        metadatas=metadatas,  # type: ignore[arg-type]
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+        ids=ids_with_metadata,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\.venv\Lib\site-packages\chromadb\api\models\Collection.py", line 530, in upsert
+    self._client._upsert(
+    ~~~~~~~~~~~~~~~~~~~~^
+        collection_id=self.id,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+        database=self.database,
+        ^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\.venv\Lib\site-packages\chromadb\api\rust.py", line 541, in _upsert
+    return self.bindings.upsert(
+           ~~~~~~~~~~~~~~~~~~~~^
+        str(collection_id),
+        ^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+        database,
+        ^^^^^^^^^
+    )
+    ^
+chromadb.errors.InternalError: Error in compaction: Error constructing hnsw segment reader: Error creating hnsw segment reader: Error loading hnsw index
+2026-09-14 23:03:15,953 - ERROR - vector_store.py - 88 - [加载向量库]D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\data\维护保养.txt文件加载向量库失败：Error in compaction: Error constructing hnsw segment reader: Error creating hnsw segment reader: Error loading hnsw index
+Traceback (most recent call last):
+  File "D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\rag\vector_store.py", line 83, in load_document
+    self.chroma.add_documents(split_documents)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\.venv\Lib\site-packages\langchain_core\vectorstores\base.py", line 258, in add_documents
+    return self.add_texts(texts, metadatas, **kwargs)
+           ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\.venv\Lib\site-packages\langchain_chroma\vectorstores.py", line 651, in add_texts
+    self._collection.upsert(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        metadatas=metadatas,  # type: ignore[arg-type]
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+        ids=ids_with_metadata,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\.venv\Lib\site-packages\chromadb\api\models\Collection.py", line 530, in upsert
+    self._client._upsert(
+    ~~~~~~~~~~~~~~~~~~~~^
+        collection_id=self.id,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+        database=self.database,
+        ^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\.venv\Lib\site-packages\chromadb\api\rust.py", line 541, in _upsert
+    return self.bindings.upsert(
+           ~~~~~~~~~~~~~~~~~~~~^
+        str(collection_id),
+        ^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+        database,
+        ^^^^^^^^^
+    )
+    ^
+chromadb.errors.InternalError: Error in compaction: Error constructing hnsw segment reader: Error creating hnsw segment reader: Error loading hnsw index
+2026-09-14 23:03:17,627 - ERROR - vector_store.py - 88 - [加载向量库]D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\data\扫拖一体机器人100问.txt文件加载向量库失败：Error in compaction: Error constructing hnsw segment reader: Error creating hnsw segment reader: Error loading hnsw index
+Traceback (most recent call last):
+  File "D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\rag\vector_store.py", line 83, in load_document
+    self.chroma.add_documents(split_documents)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\.venv\Lib\site-packages\langchain_core\vectorstores\base.py", line 258, in add_documents
+    return self.add_texts(texts, metadatas, **kwargs)
+           ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\.venv\Lib\site-packages\langchain_chroma\vectorstores.py", line 651, in add_texts
+    self._collection.upsert(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        metadatas=metadatas,  # type: ignore[arg-type]
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+        ids=ids_with_metadata,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\.venv\Lib\site-packages\chromadb\api\models\Collection.py", line 530, in upsert
+    self._client._upsert(
+    ~~~~~~~~~~~~~~~~~~~~^
+        collection_id=self.id,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+        database=self.database,
+        ^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\.venv\Lib\site-packages\chromadb\api\rust.py", line 541, in _upsert
+    return self.bindings.upsert(
+           ~~~~~~~~~~~~~~~~~~~~^
+        str(collection_id),
+        ^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+        database,
+        ^^^^^^^^^
+    )
+    ^
+chromadb.errors.InternalError: Error in compaction: Error constructing hnsw segment reader: Error creating hnsw segment reader: Error loading hnsw index
+2026-09-14 23:03:21,101 - ERROR - vector_store.py - 88 - [加载向量库]D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\data\选购指南.txt文件加载向量库失败：Error in compaction: Error constructing hnsw segment reader: Error creating hnsw segment reader: Error loading hnsw index
+Traceback (most recent call last):
+  File "D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\rag\vector_store.py", line 83, in load_document
+    self.chroma.add_documents(split_documents)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\.venv\Lib\site-packages\langchain_core\vectorstores\base.py", line 258, in add_documents
+    return self.add_texts(texts, metadatas, **kwargs)
+           ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\.venv\Lib\site-packages\langchain_chroma\vectorstores.py", line 651, in add_texts
+    self._collection.upsert(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        metadatas=metadatas,  # type: ignore[arg-type]
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+        ids=ids_with_metadata,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\.venv\Lib\site-packages\chromadb\api\models\Collection.py", line 530, in upsert
+    self._client._upsert(
+    ~~~~~~~~~~~~~~~~~~~~^
+        collection_id=self.id,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+        database=self.database,
+        ^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\.venv\Lib\site-packages\chromadb\api\rust.py", line 541, in _upsert
+    return self.bindings.upsert(
+           ~~~~~~~~~~~~~~~~~~~~^
+        str(collection_id),
+        ^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+        database,
+        ^^^^^^^^^
+    )
+    ^
+chromadb.errors.InternalError: Error in compaction: Error constructing hnsw segment reader: Error creating hnsw segment reader: Error loading hnsw index
+2026-09-14 23:03:31,190 - ERROR - vector_store.py - 88 - [加载向量库]D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\data\故障排除.txt文件加载向量库失败：Error in compaction: Error constructing hnsw segment reader: Error creating hnsw segment reader: Error loading hnsw index
+Traceback (most recent call last):
+  File "D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\rag\vector_store.py", line 83, in load_document
+    self.chroma.add_documents(split_documents)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\.venv\Lib\site-packages\langchain_core\vectorstores\base.py", line 258, in add_documents
+    return self.add_texts(texts, metadatas, **kwargs)
+           ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\.venv\Lib\site-packages\langchain_chroma\vectorstores.py", line 651, in add_texts
+    self._collection.upsert(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        metadatas=metadatas,  # type: ignore[arg-type]
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+        ids=ids_with_metadata,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\.venv\Lib\site-packages\chromadb\api\models\Collection.py", line 530, in upsert
+    self._client._upsert(
+    ~~~~~~~~~~~~~~~~~~~~^
+        collection_id=self.id,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+        database=self.database,
+        ^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\.venv\Lib\site-packages\chromadb\api\rust.py", line 541, in _upsert
+    return self.bindings.upsert(
+           ~~~~~~~~~~~~~~~~~~~~^
+        str(collection_id),
+        ^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+        database,
+        ^^^^^^^^^
+    )
+    ^
+chromadb.errors.InternalError: Error in compaction: Error constructing hnsw segment reader: Error creating hnsw segment reader: Error loading hnsw index
+2026-09-14 23:03:36,659 - ERROR - vector_store.py - 88 - [加载向量库]D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\data\维护保养.txt文件加载向量库失败：Error in compaction: Error constructing hnsw segment reader: Error creating hnsw segment reader: Error loading hnsw index
+Traceback (most recent call last):
+  File "D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\rag\vector_store.py", line 83, in load_document
+    self.chroma.add_documents(split_documents)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\.venv\Lib\site-packages\langchain_core\vectorstores\base.py", line 258, in add_documents
+    return self.add_texts(texts, metadatas, **kwargs)
+           ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\.venv\Lib\site-packages\langchain_chroma\vectorstores.py", line 651, in add_texts
+    self._collection.upsert(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        metadatas=metadatas,  # type: ignore[arg-type]
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+        ids=ids_with_metadata,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\.venv\Lib\site-packages\chromadb\api\models\Collection.py", line 530, in upsert
+    self._client._upsert(
+    ~~~~~~~~~~~~~~~~~~~~^
+        collection_id=self.id,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+        database=self.database,
+        ^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\.venv\Lib\site-packages\chromadb\api\rust.py", line 541, in _upsert
+    return self.bindings.upsert(
+           ~~~~~~~~~~~~~~~~~~~~^
+        str(collection_id),
+        ^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+        database,
+        ^^^^^^^^^
+    )
+    ^
+chromadb.errors.InternalError: Error in compaction: Error constructing hnsw segment reader: Error creating hnsw segment reader: Error loading hnsw index
+2026-09-14 23:03:41,566 - ERROR - vector_store.py - 88 - [加载向量库]D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\data\选购指南.txt文件加载向量库失败：Error in compaction: Error constructing hnsw segment reader: Error creating hnsw segment reader: Error loading hnsw index
+Traceback (most recent call last):
+  File "D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\rag\vector_store.py", line 83, in load_document
+    self.chroma.add_documents(split_documents)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\.venv\Lib\site-packages\langchain_core\vectorstores\base.py", line 258, in add_documents
+    return self.add_texts(texts, metadatas, **kwargs)
+           ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\.venv\Lib\site-packages\langchain_chroma\vectorstores.py", line 651, in add_texts
+    self._collection.upsert(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        metadatas=metadatas,  # type: ignore[arg-type]
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+        ids=ids_with_metadata,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\.venv\Lib\site-packages\chromadb\api\models\Collection.py", line 530, in upsert
+    self._client._upsert(
+    ~~~~~~~~~~~~~~~~~~~~^
+        collection_id=self.id,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+        database=self.database,
+        ^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\.venv\Lib\site-packages\chromadb\api\rust.py", line 541, in _upsert
+    return self.bindings.upsert(
+           ~~~~~~~~~~~~~~~~~~~~^
+        str(collection_id),
+        ^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+        database,
+        ^^^^^^^^^
+    )
+    ^
+chromadb.errors.InternalError: Error in compaction: Error constructing hnsw segment reader: Error creating hnsw segment reader: Error loading hnsw index
+2026-09-14 23:05:43,308 - INFO - vector_store.py - 85 - [加载向量库]D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\data\扫地机器人100问.pdf文件加载成功
+2026-09-14 23:05:52,765 - INFO - vector_store.py - 85 - [加载向量库]D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\data\扫地机器人100问2.txt文件加载成功
+2026-09-14 23:06:02,091 - INFO - vector_store.py - 85 - [加载向量库]D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\data\扫拖一体机器人100问.txt文件加载成功
+2026-09-14 23:06:21,657 - INFO - vector_store.py - 85 - [加载向量库]D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\data\故障排除.txt文件加载成功
+2026-09-14 23:06:32,468 - INFO - vector_store.py - 85 - [加载向量库]D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\data\维护保养.txt文件加载成功
+2026-09-14 23:06:42,009 - INFO - vector_store.py - 85 - [加载向量库]D:\develop\PythonProject\AI大模型RAG与智能体开发_agent项目\data\选购指南.txt文件加载成功
