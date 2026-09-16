@@ -1,0 +1,67 @@
+2026-09-16 23:52:23,533 - INFO - test_mw.py - 18 - [log_before_model]即将调用模型，带有1条信息
+2026-09-16 23:52:23,533 - INFO - test_mw.py - 21 - [log_before_model]HumanMessage 扫地机器人在我所在地区的气温下该如何保养
+2026-09-16 23:52:26,303 - INFO - middleware.py - 21 - [monitor tool]执行工具: get_user_location
+2026-09-16 23:52:26,303 - INFO - middleware.py - 22 - [monitor tool]传入参数: {}
+2026-09-16 23:52:26,304 - INFO - middleware.py - 26 - [monitor tool]工具get_user_location调用成功
+2026-09-16 23:52:26,305 - INFO - test_mw.py - 18 - [log_before_model]即将调用模型，带有3条信息
+2026-09-16 23:52:26,305 - INFO - test_mw.py - 21 - [log_before_model]ToolMessage 合肥
+2026-09-16 23:52:28,086 - INFO - middleware.py - 21 - [monitor tool]执行工具: get_weather
+2026-09-16 23:52:28,086 - INFO - middleware.py - 22 - [monitor tool]传入参数: {'city': '合肥'}
+2026-09-16 23:52:28,087 - INFO - middleware.py - 26 - [monitor tool]工具get_weather调用成功
+2026-09-16 23:52:28,087 - INFO - test_mw.py - 18 - [log_before_model]即将调用模型，带有5条信息
+2026-09-16 23:52:28,087 - INFO - test_mw.py - 21 - [log_before_model]ToolMessage 合肥的天气是晴天,气温26摄氏度，湿度50%，南风一级，AQI21，最近6小时降
+2026-09-16 23:52:30,487 - INFO - middleware.py - 21 - [monitor tool]执行工具: rag_summarize
+2026-09-16 23:52:30,487 - INFO - middleware.py - 22 - [monitor tool]传入参数: {'query': '扫地机器人在26摄氏度、50%湿度环境下的保养方法'}
+2026-09-16 23:52:32,862 - INFO - middleware.py - 26 - [monitor tool]工具rag_summarize调用成功
+2026-09-16 23:52:32,863 - INFO - test_mw.py - 18 - [log_before_model]即将调用模型，带有7条信息
+2026-09-16 23:52:32,863 - INFO - test_mw.py - 21 - [log_before_model]ToolMessage 在26摄氏度、50%湿度环境下，扫地机器人保养应每日使用后用干软布擦拭机身外壳，
+2026-09-16 23:55:32,551 - INFO - middleware.py - 40 - [log_before_model]即将调用模型，带有1条信息
+2026-09-16 23:57:34,598 - INFO - middleware.py - 40 - [log_before_model]即将调用模型，带有1条信息
+2026-09-16 23:57:34,598 - DEBUG - middleware.py - 41 - [log_before_model]str 扫地机器人在我所在地区的气温下该如何保养
+2026-09-16 23:57:37,538 - INFO - middleware.py - 21 - [monitor tool]执行工具: get_user_location
+2026-09-16 23:57:37,538 - INFO - middleware.py - 22 - [monitor tool]传入参数: {}
+2026-09-16 23:57:37,539 - INFO - middleware.py - 26 - [monitor tool]工具get_user_location调用成功
+2026-09-16 23:57:37,539 - INFO - middleware.py - 40 - [log_before_model]即将调用模型，带有3条信息
+2026-09-16 23:57:37,539 - DEBUG - middleware.py - 41 - [log_before_model]str 杭州
+2026-09-16 23:57:39,202 - INFO - middleware.py - 21 - [monitor tool]执行工具: get_weather
+2026-09-16 23:57:39,202 - INFO - middleware.py - 22 - [monitor tool]传入参数: {'city': '杭州'}
+2026-09-16 23:57:39,203 - INFO - middleware.py - 26 - [monitor tool]工具get_weather调用成功
+2026-09-16 23:57:39,203 - INFO - middleware.py - 40 - [log_before_model]即将调用模型，带有5条信息
+2026-09-16 23:57:39,203 - DEBUG - middleware.py - 41 - [log_before_model]str 杭州的天气是晴天,气温26摄氏度，湿度50%，南风一级，AQI21，最近6小时降雨概率极低
+2026-09-16 23:57:42,065 - INFO - middleware.py - 21 - [monitor tool]执行工具: rag_summarize
+2026-09-16 23:57:42,065 - INFO - middleware.py - 22 - [monitor tool]传入参数: {'query': '扫地机器人在26摄氏度、湿度50%环境下的保养方法'}
+2026-09-16 23:57:45,598 - INFO - middleware.py - 26 - [monitor tool]工具rag_summarize调用成功
+2026-09-16 23:57:45,599 - INFO - middleware.py - 40 - [log_before_model]即将调用模型，带有7条信息
+2026-09-16 23:57:45,599 - DEBUG - middleware.py - 41 - [log_before_model]str 在26摄氏度、湿度50%环境下，扫地机器人应每日使用后用干软布擦拭机身外壳，及时清理防撞条缝隙中的毛发和线头；若为扫拖一体机型，需每周清理拖布水泵滤网，并确保使用原装配件；根据地面材质调整维护方式，如木地板调低出水量并每周除尘轮组，瓷砖或大理石地面则需每月对拖布支架除垢。
+2026-09-16 23:58:06,082 - INFO - middleware.py - 40 - [log_before_model]即将调用模型，带有1条信息
+2026-09-16 23:58:06,082 - DEBUG - middleware.py - 41 - [log_before_model]str 帮我生成一份我的使用报告
+2026-09-16 23:58:08,813 - INFO - middleware.py - 21 - [monitor tool]执行工具: get_user_id
+2026-09-16 23:58:08,813 - INFO - middleware.py - 22 - [monitor tool]传入参数: {}
+2026-09-16 23:58:08,814 - INFO - middleware.py - 26 - [monitor tool]工具get_user_id调用成功
+2026-09-16 23:58:08,815 - INFO - middleware.py - 40 - [log_before_model]即将调用模型，带有3条信息
+2026-09-16 23:58:08,815 - DEBUG - middleware.py - 41 - [log_before_model]str 1010
+2026-09-16 23:58:10,099 - INFO - middleware.py - 21 - [monitor tool]执行工具: get_current_month
+2026-09-16 23:58:10,100 - INFO - middleware.py - 22 - [monitor tool]传入参数: {}
+2026-09-16 23:58:10,101 - INFO - middleware.py - 26 - [monitor tool]工具get_current_month调用成功
+2026-09-16 23:58:10,102 - INFO - middleware.py - 40 - [log_before_model]即将调用模型，带有5条信息
+2026-09-16 23:58:10,102 - DEBUG - middleware.py - 41 - [log_before_model]str 2025-01
+2026-09-16 23:58:12,012 - INFO - middleware.py - 21 - [monitor tool]执行工具: fill_context_for_report
+2026-09-16 23:58:12,012 - INFO - middleware.py - 22 - [monitor tool]传入参数: {}
+2026-09-16 23:58:12,013 - INFO - middleware.py - 26 - [monitor tool]工具fill_context_for_report调用成功
+2026-09-16 23:58:12,014 - INFO - middleware.py - 40 - [log_before_model]即将调用模型，带有7条信息
+2026-09-16 23:58:12,015 - DEBUG - middleware.py - 41 - [log_before_model]str fill_context_for_report已被调用
+2026-09-16 23:58:13,860 - INFO - middleware.py - 21 - [monitor tool]执行工具: fetch_external_data
+2026-09-16 23:58:13,860 - INFO - middleware.py - 22 - [monitor tool]传入参数: {'user_id': '1010', 'month': '2025-01'}
+2026-09-16 23:58:13,864 - INFO - middleware.py - 26 - [monitor tool]工具fetch_external_data调用成功
+2026-09-16 23:58:13,864 - INFO - middleware.py - 40 - [log_before_model]即将调用模型，带有9条信息
+2026-09-16 23:58:13,864 - DEBUG - middleware.py - 41 - [log_before_model]str 用户1010在2025-01的使用记录：{'feature': '130㎡四居 | 三代同堂 | 通体砖', 'efficiency': '覆盖率:82%\\n手动辅助清扫:3次/天\\n定时清扫使用率:60%', 'consumables': '电池衰减:15%\\n边刷寿命:剩余45天', 'comparison': '大户型中操作便捷性低于同类20%'}
+2026-09-16 23:58:15,486 - INFO - middleware.py - 21 - [monitor tool]执行工具: rag_summarize
+2026-09-16 23:58:15,487 - INFO - middleware.py - 22 - [monitor tool]传入参数: {'query': '扫地机器人电池保养和边刷更换建议'}
+2026-09-16 23:58:18,571 - INFO - middleware.py - 26 - [monitor tool]工具rag_summarize调用成功
+2026-09-16 23:58:18,572 - INFO - middleware.py - 40 - [log_before_model]即将调用模型，带有11条信息
+2026-09-16 23:58:18,572 - DEBUG - middleware.py - 41 - [log_before_model]str 电池保养：若机器人提示“电池故障”或无法工作，应检查电池是否鼓包、漏液及电池排线是否松动，必要时更换电池或重新插拔排线。边刷更换建议：每日清理边刷上的灰尘和杂物；若边刷磨损过快，需检查地面是否有尖锐杂物、是否使用原装边刷，并根据多尘环境适当增加更换频率。
+2026-09-16 23:58:20,126 - INFO - middleware.py - 21 - [monitor tool]执行工具: rag_summarize
+2026-09-16 23:58:20,127 - INFO - middleware.py - 22 - [monitor tool]传入参数: {'query': '大户型扫地机器人使用技巧和覆盖率提升方法'}
+2026-09-16 23:58:21,830 - INFO - middleware.py - 26 - [monitor tool]工具rag_summarize调用成功
+2026-09-16 23:58:21,832 - INFO - middleware.py - 40 - [log_before_model]即将调用模型，带有13条信息
+2026-09-16 23:58:21,832 - DEBUG - middleware.py - 41 - [log_before_model]str 大户型扫地机器人使用时应采用“分区清扫”，分批次清洁不同区域；若续航不足，可启用“断点续扫”功能，完成后自动回充。

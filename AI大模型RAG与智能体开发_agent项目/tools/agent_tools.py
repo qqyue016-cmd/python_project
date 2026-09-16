@@ -69,5 +69,10 @@ def fetch_external_data(user_id: str,month: str):
         logger.warning(f'[fetch_external_data]未找到用户{user_id}在{month}的使用记录')
         return ''
 
+
+@tool(description='无入参，无返回值，调用后为中间件注入动态上下文，为报告生成做准备')
+def fill_context_for_report():
+    return f'fill_context_for_report已被调用'
+
 if __name__ == '__main__':
-    print(fetch_external_data('1001','2025-01'))
+    pass
